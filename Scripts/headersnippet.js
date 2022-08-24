@@ -1,4 +1,4 @@
-function includeHTMLSnippet() {
+function includeHeaderSnippet() {
 
     // Traverse the collection of all
     // HTML elements
@@ -30,9 +30,9 @@ function includeHTMLSnippet() {
                     // Delete the attribute and
                     // call this function again.
                     element.removeAttribute(
-                        "GFG-include-html-snippet");
+                        "header-snippet");
 
-                    includeHTMLSnippet();
+                    includeHeaderSnippet();
                 }
             }
             xmlRequest.open("GET", file, true);
