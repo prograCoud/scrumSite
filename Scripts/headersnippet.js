@@ -9,7 +9,7 @@ function includeHeaderSnippet() {
         // Search for elements with
         // specific attributes
         file = element.getAttribute(
-            "GFG-include-html-snippet");
+            "header-snippet");
 
         if (file) {
               
