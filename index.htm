@@ -23,52 +23,9 @@
     <link href="Content\normalize.css" rel="stylesheet">
     <link href="Content\main.css?v=3.8" rel="stylesheet">
     <script src="Scripts\vendor\respond.min.js"></script>
+    <script src="Scripts\headersnippet.js"></script>
 
-    <script>
-        function includeHTMLSnippet() {
-      
-            // Traverse the collection of all
-            // HTML elements
-            id = document.getElementsByTagName("*");
-            for (i = 0; i < id.length; i++) {
-                element = id[i];
-      
-                // Search for elements with
-                // specific attributes
-                file = element.getAttribute(
-                    "GFG-include-html-snippet");
-      
-                if (file) {
-                      
-                    // Create an HTTP request with 
-                    // the attribute value as the
-                    // file name
-                    xmlRequest = new XMLHttpRequest();
-                    xmlRequest.onreadystatechange = function () {
-                        if (this.readyState == 4) {
-                            if (this.status == 200) { 
-                                element.innerHTML = this.responseText; 
-                            }
-                              
-                            if (this.status == 404) { 
-                                element.innerHTML = "Page not found."; 
-                            }
-                              
-                            // Delete the attribute and
-                            // call this function again.
-                            element.removeAttribute(
-                                "GFG-include-html-snippet");
-      
-                            includeHTMLSnippet();
-                        }
-                    }
-                    xmlRequest.open("GET", file, true);
-                    xmlRequest.send();
-                    return; // Exit function.
-                }
-            }
-        };
-    </script>
+
     
 </head>
 
