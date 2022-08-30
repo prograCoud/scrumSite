@@ -19,6 +19,7 @@
         content="SCRUMstudy provides globally recognized scrum and agile certifications. An overview of scrum and agile certifications.">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="Content\icons.css" rel="stylesheet">
     <script src="Scripts\vendor\modernizr-2.8.3.min.js"></script>
@@ -27,8 +28,6 @@
     <script src="Scripts\vendor\respond.min.js"></script>
     <script src="Scripts\header-snippet.js"></script>
     <script src="Scripts\footer-snippet.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -461,66 +460,6 @@
     <script src="Scripts\vendor\jquery-1.11.2.min.js"></script>
     <script src="Scripts\plugins.js?v=1.1"></script>
     <script src="Scripts\main.js?v=1.1"></script>
-    <script>
-        var gaRedirect = "";
-
-
-        let header4thEditionClosed = sessionStorage.getItem('header4thEditionClosed');
-        if (header4thEditionClosed == null) {
-            $("#header-4th-edition-tagline").slideDown();
-        }
-
-
-        $("#header-4th-edition-tagline .icon").on("click", function () {
-            sessionStorage.setItem('header4thEditionClosed', 'true');
-
-            $(this).parents("#header-4th-edition-tagline").remove();
-        })
-    </script>
-
-    <script>
-
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-34862783-1', 'auto');
-        ga('send', 'pageview');        
-    </script>
-
-
-    <!-- Google Code for Remarketing Tag -->
-    <!--------------------------------------------------
-    Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
-    --------------------------------------------------->
-    <script type="text/javascript">
-        /* <![CDATA[ */
-        var google_conversion_id = 1026351431;
-        var google_custom_params = window.google_tag_params;
-        var google_remarketing_only = true;
-        /* ]]> */
-    </script>
-    <div class="hide">
-        <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-        </script>
-        <noscript>
-            <div style="display:inline;">
-                <img height="1" width="1" style="border-style:none;" alt="Google Analytics"
-                    src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1026351431/?guid=ON&amp;script=0">
-            </div>
-        </noscript>
-    </div>
-
-    <!-- Start Alexa Certify Javascript -->
-    <script type="text/javascript">
-        _atrk_opts = { atrk_acct: "CK1Wl1a8FRh24B", domain: "scrumstudy.com", dynamic: true };
-        (function () { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://certify-js.alexametrics.com/atrk.js"; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(as, s); })();
-    </script>
-    <noscript><img src="https://certify.alexametrics.com/atrk.gif?account=CK1Wl1a8FRh24B" style="display:none"
-            height="1" width="1" alt="Alexa Metrics"></noscript>
-    <!-- End Alexa Certify Javascript -->
 
     <script>
         includeHeaderSnippet();
