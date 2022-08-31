@@ -73,6 +73,10 @@
     position: relative;
 }
 
+.container-fluid.sigma-layout {
+    padding: 15px;
+}
+
 /*.ie8 .container {
     width: 970px;
 }*/
