@@ -25,13 +25,15 @@
     <link href="Content\main.css?v=3.8" rel="stylesheet">
     <script src="Scripts\vendor\respond.min.js"></script>
     <script src="Scripts\header-snippet.js"></script>
-    <script src="Scripts\footer-snippet.js"></script>
-
 </head>
 
 <body>
 
 <div header-snippet="header.html"></div>
+
+<script>
+    includeHeaderSnippet();
+</script>
 
 <section class="inner-banner">
     <div class="container">
@@ -220,11 +222,6 @@
                 <p><a class="button button-small" href="/whyscrum/scrum-vs-traditional-pm">Read More</a></p>
             </div>
 
-
-
-
-
-
         </div>
     </div>
 </section>
@@ -235,10 +232,12 @@
     <script src="Scripts\vendor\jquery-1.11.2.min.js"></script>
     <script src="Scripts\plugins.js?v=1.1"></script>
     <script src="Scripts\main.js?v=1.1"></script>
+    <script src="Scripts\footer-snippet.js"></script>
 
     <script>
-        includeHeaderSnippet();
-        includeFooterSnippet();
+        $(document).ready(function(){       
+            includeFooterSnippet();
+        }); 
     </script>
 </body>
 </html>
