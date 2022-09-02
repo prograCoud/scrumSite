@@ -25,13 +25,16 @@
     <link href="..\Content\main.css?v=3.8" rel="stylesheet">
     <script src="..\Scripts\vendor\respond.min.js"></script>
     <script src="..\Scripts\header-snippet.js"></script>
-    <script src="..\Scripts\footer-snippet.js"></script>
 
 </head>
 
 <body>
 
     <div sub-header-snippet="..\sub-header.html"></div>
+
+    <script>
+        includeSubHeaderSnippet();
+    </script>
 
 <section class="inner-banner">
     <div class="container">
@@ -218,8 +221,9 @@
     </script>
 
 <script>
-    includeSubHeaderSnippet();
-    includeSubFooterSnippet();
+    $(document).ready(function(){       
+        includeSubFooterSnippet();
+    });
 </script>
  
 </body>
