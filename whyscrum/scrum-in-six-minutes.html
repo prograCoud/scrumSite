@@ -6,19 +6,7 @@
 <!--[if (gt IE 9)|!(IE)]><!-->
 <html class="no-js" lang="en" prefix="og: http://ogp.me/ns#">
 <!--<![endif]-->
-<head>
-    <script>
-    $( window ).load( function() {        
-        includeSubHeaderSnippet();
-    })
-    </script>
-    <script>
-    $(document).ready(function(){
-        includeSubFooterSnippet();
-    });
-    </script>
-    
-    
+<head>   
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -119,6 +107,11 @@
         const player = new Plyr('#player');
     </script>
 
-
+    <script>
+    $(document).ready(function(){
+        includeSubHeaderSnippet();
+        includeSubFooterSnippet();
+    });
+    </script>
 </body>
 </html>
