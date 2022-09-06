@@ -55,7 +55,7 @@
 <section class="site-content">
     <div class="container">
         <div class="row">
-            <div class="col-1 col-md-2-3">
+            <div class="col-1 col-md-2-1">
                 <h4>Overview </h4>
 
                 <p>Six Sigma Green Belt (SSGB™) course focuses on providing students with an understanding of the various Six Sigma tools and techniques. These tools and techniques are useful in improving the production process and help to minimize defects in the end product. This course lays greater emphasis on the practical implementation of these tool and techniques in the organization.</p>
@@ -196,15 +196,11 @@
         var gaRedirect = "";
     </script>
     
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-11335535-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-11335535-1');
+        $(document).ready(function(){       
+            includeSubFooterSnippet();
+        });
     </script>
+    
 </body>
 </html>
