@@ -165,29 +165,13 @@
     </div>
 </section>
 
-    <div sub-footer-snippet="..\footer.html"></div>
+    <div sub-footer-snippet="..\sub-footer.html"></div>
 
     </div>
     <script src="..\Scripts\vendor\jquery-1.11.2.min.js"></script>
     <script src="..\Scripts\plugins.js?v=1.1"></script>
     <script src="..\Scripts\main.js?v=1.1"></script>
     <script src="..\Scripts\footer-snippet.js"></script>
-    <script>
-        var gaRedirect = "";
-
-
-        let header4thEditionClosed = sessionStorage.getItem('header4thEditionClosed');
-        if (header4thEditionClosed == null) {
-            $("#header-4th-edition-tagline").slideDown();
-        }
-
-
-        $("#header-4th-edition-tagline .icon").on("click", function () {
-            sessionStorage.setItem('header4thEditionClosed', 'true');
-
-            $(this).parents("#header-4th-edition-tagline").remove();
-        })
-    </script>
     
     <script>
         $(document).ready(function(){       

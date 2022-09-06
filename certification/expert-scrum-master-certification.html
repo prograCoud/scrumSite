@@ -168,56 +168,18 @@
 
 <section class="site-content alt-bg">
     <div class="container">
-        <div class="row"><!--
-            <div class="col-1 col-md-2-5">
-                <h3 class="no-margin float-left"><strong>Ready to Enroll?</strong></h3>
-            </div>
-            <div class="col-1 col-md-3-5 text-right-md">
-                <form class="form" action="/classes/certification-enrollment" method="post">
-                    <p class="text-left visible visible-sm">
-                        No classes available in your country now; however, you can enroll in online courses
-                    </p>
-                    <div class="lang-border">
-                        <select name="LanguageID" class=" input right-10 lang-height">
-                            <option value="1">English
-                            <option value="2">Spanish
-                        </select>
-                        <button class="button button-success"> Enrol in Online Course </button>
-                    </div> 
-                    <p class=" hidden hidden-sm">
-    No classes available in your country now; however, you can enroll in online courses
-</p>                   
-                </form>
-                
-            </div>-->
+        <div class="row">      
         </div>
     </div>
 </section>
 
-    <div sub-footer-snippet="..\footer.html"></div>
+    <div sub-footer-snippet="..\sub-footer.html"></div>
 
     </div>
     <script src="..\Scripts\vendor\jquery-1.11.2.min.js"></script>
     <script src="..\Scripts\plugins.js?v=1.1"></script>
     <script src="..\Scripts\main.js?v=1.1"></script>
     <script src="..\Scripts\footer-snippet.js"></script>
-
-    <script>
-        var gaRedirect = "";
-
-
-        let header4thEditionClosed = sessionStorage.getItem('header4thEditionClosed');
-        if (header4thEditionClosed == null) {
-            $("#header-4th-edition-tagline").slideDown();
-        }
-
-
-        $("#header-4th-edition-tagline .icon").on("click", function () {
-            sessionStorage.setItem('header4thEditionClosed', 'true');
-
-            $(this).parents("#header-4th-edition-tagline").remove();
-        })
-    </script>
     
     <script>
         $(document).ready(function(){       
