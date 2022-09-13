@@ -2798,10 +2798,10 @@ button-none {
 .primary-nav {
     text-align: center;
     font-size: 15px;
-    background-color: #0063a1;
+    background-color: #00a4ff;
     /*height: 40px;*/
     position: relative;
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAoCAMAAAAIaGBFAAAAQlBMVEUAX50ATooAXJQAV5EAX5sAYJsAXZYAY6EAXZgAVZYAXpkAYZ0AYqAAXpgAY6AAXJYAX5oAXJUAYJwAXZcAYp8AYZ5BTTHLAAAAL0lEQVR4Xh3BhQ3AMAADwQ9DmfZftZZ1DKCxyyqvfbbIbYXMaVM26TxWOeSySCL8VbICEd4cYH0AAAAASUVORK5CYII=') /*/Scrum-Images/primary-navigation/bg-menu.png*/;
+    /*background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAoCAMAAAAIaGBFAAAAQlBMVEUAX50ATooAXJQAV5EAX5sAYJsAXZYAY6EAXZgAVZYAXpkAYZ0AYqAAXpgAY6AAXJYAX5oAXJUAYJwAXZcAYp8AYZ5BTTHLAAAAL0lEQVR4Xh3BhQ3AMAADwQ9DmfZftZZ1DKCxyyqvfbbIbYXMaVM26TxWOeSySCL8VbICEd4cYH0AAAAASUVORK5CYII=') /*/Scrum-Images/primary-navigation/bg-menu.png*/;*/
     background-repeat: repeat-x;
     background-position: left top;
     z-index: 2;
