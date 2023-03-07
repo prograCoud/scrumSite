@@ -35,7 +35,7 @@
     <link href="..\Content\main.css?v=3.8" rel="stylesheet">
     <script src="..\Scripts\vendor\respond.min.js"></script>
     <script src="..\Scripts\header-snippet.js"></script>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
@@ -62,7 +62,36 @@
     <div class="container">
             <p class="text-muted">Please fill out the form below and we will get in touch with you soon</p>
             <!-- <iframe src="https://www.vmedu.com/SupportCenter/RaiseTicket?BrandId=11" width="100%" height="560px" frameborder="0" scrolling="no" id="contact-us-frame"></iframe> -->
+            <form id="contact-form">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
         
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="phone" id="phone" name="phone" required>
+
+                <select id="category" name="category">
+                    <option value="Fundamentals">Scrum Fundamentals Certified (SFC<sup>&trade;</sup>)</option>
+                    <option value="Dev">Scrum Developer Certified (SDC<sup>&reg;</sup>)</option>
+                    <option value="Master">Scrum Master Certified (SMC<sup>&reg;</sup>)</option>
+                    <option value="Agile">SCRUMstudy Agile Master Certified (SAMC<sup>&trade;</sup>)</option>
+                    <option value="ProductOwner">Scrum Product Owner Certified (SPOC<sup>&reg;</sup>)</option>
+                    <option value="ScaledMaster">Scaled Scrum Master Certified (SSMC<sup>&trade;</sup>)</option>
+                    <option value="ScaledOwner">Scaled Scrum Product Owner Certified (SSPOC<sup>&trade;</sup>)</option>
+                    <option value="ScaledOwner">Scaled Scrum Product Owner Certified (SSPOC<sup>&trade;</sup>)</option>
+                    <option value="Trainer">Certified Trainer (SCT<sup>&reg;</sup>)</option>
+                    <option value="Coach">Coach (SCAC<sup>&trade;</sup>)</option>
+                </select>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+        
+                <input type="submit" value="Submit">
+        
+            </form>s
 
     </div>
 </section>
@@ -101,6 +130,37 @@
         }, false);
 
     </script>
+
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        sendEmail();
+    });
+
+    function sendEmail() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var category = document.getElementById('category').value;
+        var phone = document.getElementById('phone').value;
+        var message = document.getElementById('message').value;
+
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: "kevinbm13@gmail.com",
+            Password: "teutones.com",
+            To: 'kevinbm13@gmail.com',
+            From: "kevinbm13@gmail.com",
+            Subject: "[" + category + "] New Contact Form Submission",
+            Body: "Name: " + name + "<br>Email: " + email + "<br>Phone: " + phone + "<br>Category: " + category + "<br>Message: " + message,
+        }).then(function(response) {
+            if (response == 'OK') {
+                alert('Email has been sent successfully!');
+            } else {
+                throw new Error('Error: ' + response);
+            }
+        });
+    }
+</script>
 
      
 </body>
